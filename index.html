@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="./img/photo_2023-03-01_19-05-33.jpg" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Quiz" />
+    <meta name="author" content="sina naseri" />
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="d-flex justify-content-center">
+    <div class="box my-5 p-2 p-md-5 w-100">
+      <h3 class="title text-dark text-center">JavaScript Quiz</h3>
+      <h4 class="questionNumber mt-5">Question <span class="number">1</span> of 25:</h4>
+      <h5 class="question my-5"></h5>
+      <div class="answers bg-light p-sm-3 py-2"></div>
+      <div class="d-flex justify-content-around mt-5">
+        <button class="start btn btn-success">Start</button>
+        <div>
+          <button class="previous btn btn-warning disabled">Previous</button>
+          <button class="next btn btn-warning disabled px-4">Next</button>
+        </div>
+        <button button class="finish btn btn-warning disabled">Finish</button>
+      </div>
+      <p class="time text-center mt-5 mb-n4 text-success">0:00</p>
+    </div>
+  </body>
+</html>

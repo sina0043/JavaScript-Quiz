@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    width: 80% !important;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.time {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.answers p:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+button.disabled {
+  cursor: not-allowed;
+}
+
+.check_1 {
+  width: 18px;
+  height: 18px;
+}
+
+.check_2 {
+  width: 8px;
+  height: 8px;
+}
+
+.answer.checked .check_1 {
+  background-color: forestgreen !important;
+}
+
+.wrapper button {
+  border-style: none;
+  letter-spacing: 3px;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.wrapper button span {
+  position: absolute;
+}
+
+.wrapper button span:nth-child(1) {
+  height: 3px;
+  width: 200px;
+  top: 0px;
+  left: -200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1 {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+.wrapper button span:nth-child(2) {
+  height: 70px;
+  width: 3px;
+  top: -70px;
+  right: 0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes span2 {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+.wrapper button span:nth-child(3) {
+  height: 3px;
+  width: 200px;
+  right: -200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes span3 {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
+.wrapper button span:nth-child(4) {
+  height: 70px;
+  width: 3px;
+  bottom: -70px;
+  left: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes span4 {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title,
+  .questionNumber {
+    font-size: 20px;
+  }
+
+  .question,
+  .check-question {
+    font-size: 16px;
+  }
+
+  .answer h6,
+  .check-answer h6 {
+    font-size: 13px;
+  }
+}
